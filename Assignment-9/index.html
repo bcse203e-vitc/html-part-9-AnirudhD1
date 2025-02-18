@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale" />
+        <title>Online booking system</title>        
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        Table 
+        <h1>Online Booking System</h1>
 
+        <h2>Welcome to our online booking system!</h2>
+    
+        <form method="post" action="booking.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>  
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+            <select id="service" name="service">
+                <option value="" disabled selected>Select a service</option>
+                <option value="doctor">Doctor's appointment</option>
+                <option value="salon">Salon Service</option>
+                <option value="car">Car Service</option>
+                <option value="household">Household Services</option>
+                <option value="garden">Gardening Service</option>
+                <option value="clean">Cleaning Service</option>
+
+            </select> 
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+            
+            <label for="people">Number of people:</label>
+            <input type="number" id="people" name="people" min="1" required><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+        
+        <p>Note: Please enter your phone number in the format XXX-XXX-XXXX</p>
+        
+        <p>Please note that the booking system is currently in a prototype state. No actual bookings have been made yet.</p>
+        
+        <p>Created by: Your Name</p>
+
+    </body>
+    <script type="text/javascript" src="index.js"></script>
+
+</html>
