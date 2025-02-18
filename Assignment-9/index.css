@@ -1,0 +1,162 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light Grey */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header */
+h1 {
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Centered Form Container */
+.container {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form Title */
+.container h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Form Elements */
+label {
+    font-weight: 600;
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #555;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+/* Booked Appointments Section */
+#appointments {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Appointment Header */
+#appointments h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Appointment Card */
+.appointment-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px auto;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.2s;
+}
+
+.appointment-card:hover {
+    transform: scale(1.05);
+}
+
+/* Appointment Card Image */
+.appointment-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+.appointment-details {
+    flex: 1;
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background: #dc2626; /* Red */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #b91c1c; /* Darker Red */
+}
